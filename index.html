@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<link rel="stylesheet" href="./main.min.css">
+<link rel="shortcut icon" href="./favicon.ico">
+<title>GitHub 文件加速</title>
+<!-- Header -->
+<header id="header" class="alt">
+    <h1><a href="https://github.palees.com/">GitHub Proxy Server</a></h1>
+</header>
+<!-- CTA -->
+<section id="cta">
+    <img src="./github.png" height="100" width="100">
+    <br>
+    <h2>GitHub Proxy Server</h2>
+    <p>GitHub 文件 , Releases , archive , gist , raw.githubusercontent.com 文件代理加速下载服务.</p>
+    <form action="https://github.palees.com/" method="get" target="__blank">
+        <div class="row gtr-50 gtr-uniform">
+            <div class="col-8 col-12-mobilep">
+                <input class="block url" type="text" name="q" id="email" placeholder="输入 GitHub 文件链接"
+                    pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob)|((?:raw|gist)\.(?:githubusercontent|github)\.com))\/.+$"
+                    required="">
+            </div>
+            <div class="col-4 col-12-mobilep">
+                <input type="submit" value="下载">
+            </div>
+        </div>
+    </form>
+</section>
+<section id="main" class="container">
+    <header>
+    </header>
+    <div class="row">
+        <div class="col-12">
+
+            <!-- Text -->
+            <section class="box">
+                <h3>终端命令行</h3>
+                <p>支持终端命令行 git clone , wget , curl 等工具下载.
+                    <br>
+                    支持 <font color="red">raw.githubusercontent.com</font> , <font color="red">gist.github.com
+                    </font> , <font color="red">gist.githubusercontent.com</font> 文件下载.
+                    <br>
+                    <b>注意：</b>不支持 SSH Key 方式 git clone 下载.
+                </p>
+
+                <hr>
+
+                <header>
+                    <h4><b>git clone</b></h4>
+                </header>
+                <p><b>git clone</b>
+                    <font color="red">https://github.palees.com/</font>
+                    <font color="green">https://github.com/stilleshan/ServerStatus</font>
+                </p>
+
+                <header>
+                    <h4><b>wget &amp; curl</b></h4>
+                </header>
+                <p><b>wget</b>
+                    <font color="red">https://github.palees.com/</font>
+                    <font color="green">https://github.com/stilleshan/ServerStatus/archive/master.zip</font>
+                    <br>
+                    <b>wget</b>
+                    <font color="red">https://github.palees.com/</font>
+                    <font color="green">https://raw.githubusercontent.com/stilleshan/ServerStatus/master/Dockerfile
+                    </font>
+                    <br>
+                    <b>curl -O</b>
+                    <font color="red">https://github.palees.com/</font>
+                    <font color="green">https://github.com/stilleshan/ServerStatus/archive/master.zip</font>
+                    <br>
+                    <b>curl -O</b>
+                    <font color="red">https://github.palees.com/</font>
+                    <font color="green">https://raw.githubusercontent.com/stilleshan/ServerStatus/master/Dockerfile
+                    </font>
+                </p>
+            </section>
+        </div>
+    </div>
+</section>
+</form>
+<!-- Footer -->
+<footer id="footer">
+    <ul class="copyright">
+        <li>网页样式 : <a href="https://github.palees.com/" target="_blank">ghproxy.com</a></li>
+        <li>代理项目 : <a href="https://github.com/hunshcn/gh-proxy/" target="_blank">hunshcn/gh-proxy</a></li>
+    </ul>
+</footer>
+</body>
+
+</html>
